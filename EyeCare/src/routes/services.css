@@ -1,0 +1,108 @@
+/* Global Styles */
+
+/* Services Container */
+.services-container {
+  width: 100%;
+  padding: 30px;
+  background-color: #f6f2ed;
+}
+
+/* Header Section */
+.services-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-header h1 {
+  font-size: 2.8rem;
+  color: #2b4c7e;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #3f3944;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Service List Section */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.service-item {
+  background-color: #e6c9b6;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-item h2 {
+  font-size: 1.8rem;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 60px;
+}
+
+.faq-section h2 {
+  font-size: 2.4rem;
+  color: #2b4c7e;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  background-color: #e6c9b6;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-item h3 {
+  font-size: 1.6rem;
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .faq-section h2 {
+    font-size: 2rem;
+  }
+}

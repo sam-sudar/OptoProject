@@ -1,0 +1,384 @@
+/* CSS for Home Page  */
+/* FirstContent */
+.homeContent-main {
+  width: 100%;
+  height: 650px;
+  display: flex;
+}
+
+.homeContent-main > div {
+  display: flex;
+  height: 100%;
+}
+
+.homeContent-text {
+  width: 55%;
+  padding: 100px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+.homeContent-text > p {
+  margin: 20px 0px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.homeContent-text > h1 {
+  margin: 20px 0px 0px;
+  font-size: 4rem;
+  font-style: oblique;
+  font-family: "Kanit";
+  color: #1c1c1c;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.homeContent-image-div {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.homeContent-img {
+  width: 72%;
+  border-radius: 4px;
+  height: 75%;
+  margin-left: 5%;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .homeContent-main {
+    flex-direction: column;
+  }
+  .homeContent-main > div {
+    width: 100%;
+    height: 50%;
+    /* background-color: #009193; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .homeContent-main > div:first-child {
+    padding: 50px 0px 20px;
+  }
+
+  .homeContent-text > h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Kanit";
+    color: #1c1c1c;
+  }
+  .homeContent-text > p {
+    font-size: 1.2rem;
+  }
+  .logo {
+    display: none;
+  }
+  .homeContent-img {
+    width: 70%;
+    border-radius: 15px;
+    height: 85%;
+    margin-left: 0px;
+  }
+  .homeContent-image-div {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+
+/* DoctorContent */
+.docContent-main {
+  width: 100%;
+  height: 760px;
+  display: flex;
+  background-color: #f6f2ed;
+  padding-top: 40px;
+}
+
+.docContent-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+}
+
+.docContent-image > img {
+  margin-top: 20px;
+  width: 62%;
+  height: 85%;
+}
+
+.docContent-text {
+  width: 50%;
+  height: 100%;
+  padding: 50px;
+}
+
+.docContent-text > h2 {
+  font-size: 2.2rem;
+  margin: 0px 0px 15px;
+  font-family: "Kanit";
+}
+.docContent-text > p {
+  font-size: 1.2rem;
+  line-height: 160%;
+  margin: 0px 0px 15px;
+}
+
+.exp-div {
+  width: 97%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.exp-box {
+  width: 100%;
+  height: 28%;
+  padding: 10px;
+  background-color: #abc6d7;
+  border-radius: 10px;
+}
+/* Media Query */
+
+@media (max-width: 768px) {
+  .docContent-main {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .docContent-image {
+    width: 100%;
+  }
+
+  .docContent-image > img {
+    width: 80%;
+    height: 87%;
+  }
+
+  .docContent-text {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .docContent-text > h2 {
+    font-size: 1.8rem;
+  }
+  .docContent-text > p {
+    font-size: 0.9rem;
+  }
+  .exp-div {
+    height: 320px;
+  }
+  .exp-box {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}
+
+/* Scope Content  */
+.scpContent-main {
+  width: 100%;
+  height: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f2ed;
+  padding-top: 80px;
+}
+
+#scpContent-h1 {
+  width: 100%;
+  margin: 7px 0px;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.scpContent-box {
+  width: 97%;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #009193;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.scpContent-box > div {
+  width: 21%;
+  height: 90%;
+  background-color: #f6f2ed;
+  padding: 15px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.scpContent-box > div > p {
+  font-size: 1rem;
+}
+
+.scpContent-img {
+  width: 100px;
+  height: 110px;
+}
+
+.gerContent-div {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.gerContent-div > div {
+  width: 47%;
+  height: 96%;
+  margin: 10px;
+  padding: 20px;
+}
+
+.gerContent-div > div > p {
+  font-size: 1.4rem;
+}
+
+.gerContent-div > div > button {
+  width: 22%;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 1.4rem;
+  background: linear-gradient(#7fffd4, #009193);
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .scpContent-main {
+    height: fit-content;
+  }
+  #scpContent-h1 {
+    font-size: 2rem;
+  }
+  .scpContent-box {
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .scpContent-box > div {
+    width: 90%;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .gerContent-div {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .gerContent-div > div {
+    width: 100%;
+    padding: 0px;
+  }
+  .gerContent-div > div > p {
+    font-size: 0.9rem;
+  }
+  .gerContent-div > div > button {
+    width: 40%;
+    margin-left: 89px;
+  }
+}
+
+/* List Content  */
+.listContent-main {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.listContent-main > img {
+  width: 60px;
+  margin: 40px 0px;
+}
+
+.listContent-div {
+  width: 60%;
+  height: 110px;
+  background-color: #f6f2ed;
+  border-radius: 10px;
+  margin: 20px 0px;
+  display: flex;
+}
+
+.listDiv-left {
+  width: 15%;
+  height: 100%;
+  background-color: #7fffd4;
+  color: #1c1c1c;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.listDiv-right {
+  width: 80%;
+  height: 100%;
+  padding: 5px 25px;
+  color: #1c1c1c;
+}
+
+.listDiv-right > h1 {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .listContent-div {
+    width: 90%;
+    height: 130px;
+  }
+  .listDiv-left {
+    font-size: 1.3rem;
+    padding-top: 40px;
+    display: none;
+  }
+
+  .listDiv-right {
+    width: 100%;
+  }
+
+  .listDiv-right > h1 {
+    font-size: 1rem;
+  }
+  .listDiv-right > p {
+    font-size: 0.8rem;
+  }
+}

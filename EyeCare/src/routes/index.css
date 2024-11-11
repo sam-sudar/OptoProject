@@ -1,0 +1,306 @@
+/* Reset CSS */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6c9b6;
+  color: #1c1c1c;
+}
+
+main {
+  width: 100vw;
+  height: 100vw;
+}
+
+.home-nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+#nav-right,
+#nav-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 40px;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+#contact-div {
+  width: 120px;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background: linear-gradient(#7fffd4, #009193);
+}
+
+#contact-div:hover {
+  background: linear-gradient(#009193, #7fffd4);
+  opacity: 0.9;
+  transition: background 1s ease-out;
+  cursor: pointer;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6c9b6;
+  color: #1c1c1c;
+}
+
+main {
+  width: 100vw;
+  height: 100vw;
+}
+
+.home-nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: #e6c9b6;
+}
+
+#nav-left {
+  display: flex;
+  align-items: center;
+}
+
+#nav-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+#contact-div {
+  width: 120px;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background: linear-gradient(#7fffd4, #009193);
+}
+
+#contact-div:hover {
+  background: linear-gradient(#009193, #7fffd4);
+  opacity: 0.9;
+  transition: background 1s ease-out;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #333333;
+  margin: 5px;
+  transition: 0.4s;
+}
+
+/* Hide navbar links on smaller screens */
+#nav-right {
+  display: flex;
+}
+
+#nav-right a {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home-nav {
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #nav-right {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #e6c9b6;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.3s ease;
+  }
+
+  #nav-right.open {
+    height: calc(100vh - 60px);
+  }
+
+  #nav-right a {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  #nav-right a:last-child {
+    margin: 0px;
+  }
+
+  #nav-left {
+    display: none;
+  }
+}
+
+/* About  */
+.about-home {
+  width: 100vw;
+  height: 100vw;
+  background-color: yellowgreen;
+}
+
+.about-home > h1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px 0px;
+  font-size: 3rem;
+}
+
+.about-main {
+  width: 100%;
+  height: 630px;
+  background-color: chartreuse;
+}
+
+.about-main > div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.about-text {
+  background-color: red;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.about-text > p {
+  margin: 20px 0px;
+  font-size: 1.5rem;
+}
+
+.about-text > h1 {
+  margin: 20px 0px 0px;
+  font-size: 3.2rem;
+}
+
+/* Services  */
+.services-home {
+  width: 100vw;
+  height: 100vw;
+  background-color: yellowgreen;
+}
+
+.services-home > h1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px 0px;
+  font-size: 3rem;
+}
+
+.services-main {
+  width: 100%;
+  height: 630px;
+  background-color: chartreuse;
+}
+
+.services-main > div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.services-text {
+  background-color: red;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.services-text > p {
+  margin: 20px 0px;
+  font-size: 1.5rem;
+}
+
+.services-text > h1 {
+  margin: 20px 0px 0px;
+  font-size: 3.2rem;
+}

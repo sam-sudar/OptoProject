@@ -1,0 +1,25 @@
+Light Pink: #F6F2ED
+Skin: #E6C9B6
+Light Grey: #ABC6D7
+Light Brown: #856A6F
+Light Black: #3F3944
+Grey: #9D9EA9
+Teal: #5CB6B8
+
+
+Darker Shades of => #F6F2ED:
+#EDE6E0 - Just a touch darker with a similar warmth.
+#E3D9D3 - A subtle, darker version that maintains the soft pink hue.
+#DAD0C9 - Noticeably darker while still being within the same color family.
+#D0C7BF - Offers a more muted and less vibrant alternative.
+
+Font Color Recommendations:
+Dark Grey: #4A4A4A - For a modern, clean look that contrasts well with the light pink.
+Charcoal: #333333 - For strong readability and a sleek appearance.
+Rich Black: #1C1C1C - For a more formal and impactful presence.
+Soft Brown: #735F54 - To complement the warm tones in the background.
+Midnight Blue: #2E3B4E - Offers a cool contrast, especially against warm backgrounds.
+
+
+#009193
+#2b4c7e
