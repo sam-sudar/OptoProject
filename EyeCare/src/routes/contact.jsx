@@ -41,7 +41,7 @@ export default function Contact() {
 
           <div className="contact-map">
             <h2>Find Us Here:</h2>
-            <iframe
+            {/* <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.4592652916354!2d144.95373561516265!3d-37.8172098797519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ4JzA3LjkiUyAxNDTCsDU3JzExLjUiRQ!5e0!3m2!1sen!2sin!4v1612357312123!5m2!1sen!2sin"
               width="100%"
               height="400px"
@@ -49,6 +49,15 @@ export default function Contact() {
               allowFullScreen=""
               loading="lazy"
               title="Map Location"
+            ></iframe> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3948.612842235369!2d77.3224195!3d8.2416284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f90064d581e3%3A0xd29275201db3601!2sEye%20and%20my%20care%20opticals!5e0!3m2!1sen!2sin!4v1731511346174!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowfullscreen=""
+              loading="lazy"
+              title="Thuckalay, Eye Care Optometrist"
             ></iframe>
           </div>
         </section>

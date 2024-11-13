@@ -1,11 +1,12 @@
+/* General styles */
+
 /* Container for the whole about page */
 .about-container {
-  width: 80%;
+  width: 100%;
   /* max-width: 1200px; */
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f6f2ed;
-  height: auto;
+  margin: 50px 0px;
+  padding: 0px 80px;
+  font-family: "Poppins";
 }
 
 /* Header section with image and text */
@@ -29,35 +30,46 @@
 .header-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #2b4c7e;
+  color: #1c1c1c;
 }
 
 .header-content p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #333;
+  color: #555;
 }
 
 /* Doctor details and clinic info */
 .doctor-details,
-.clinic-info {
+.clinic-info,
+.services {
   margin-bottom: 30px;
 }
 
 h2 {
   font-size: 2rem;
-  color: #1c1c1c;
+  color: #333;
   margin-bottom: 15px;
 }
 
-p {
+p,
+li {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: #666;
 }
 
 strong {
   color: #1c1c1c;
+}
+
+/* List in services */
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
 }
 
 /* Media query for mobile responsiveness */
