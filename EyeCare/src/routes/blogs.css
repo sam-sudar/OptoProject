@@ -83,8 +83,9 @@
 
 .blog-card h3 {
   margin: 0;
+  height: 80px;
   padding: 10px 16px 3px;
-  font-size: 1.5em;
+  font-size: 1.4em;
   /* text-align: center; */
   color: #444;
   color: #2e3b4e;
@@ -109,67 +110,4 @@
 
 .blog-card:hover img {
   transform: scale(1.05);
-}
-
-/* Blog Detail Page */
-.blog-detail {
-  width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  /* border-radius: 8px; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.blog-detail-div {
-  width: 100%;
-  height: 100%;
-  /* background-color: aqua; */
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 30px 40px;
-}
-
-.blog-detail img {
-  width: 20%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.blog-detail h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-/* .blog-detail-div div {
-  width: 50%;
-  height: 100%;
-  background-color: aqua;
-} */
-
-.blog-detail p {
-  width: 40%;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #666;
-  word-wrap: break-word;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .blog-cards-container {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-detail h1 {
-    font-size: 2em;
-  }
-
-  .blog-detail p {
-    font-size: 1.1em;
-  }
 }

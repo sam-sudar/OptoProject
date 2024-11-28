@@ -7,11 +7,15 @@ export default function DoctorContent() {
       <div className="docContent-image">
         <img
           src={AbiImg}
-          alt="Dr. Abisha S, Optometrist in Thuckalay providing geriatric eye care"
+          alt="Dr. Abisha S, Optometrist in Thuckalay providing Geriatric eye care"
         />
       </div>
       <div className="docContent-text">
-        <img className="logo" src={DocLogo} alt="Eye & My Care Optics Logo" />
+        <img
+          className="logo"
+          src={DocLogo}
+          alt="Thuckalay, Eye Care Optometrist and Optics"
+        />
         <h2>Dr. Abisha S, Your Trusted Optometrist</h2>
         <p>
           Dr. Abisha brings over seven years of specialized experience to Eye &

@@ -6,7 +6,7 @@ import "./routes/index.css";
 import About from "./routes/about.jsx";
 import Services from "./routes/services.jsx";
 import Blogs from "./routes/blogs.jsx";
-import BlogDetail from "./routes/blogsDetail.jsx";
+// import BlogDetail from "./routes/blogsDetail.jsx";
 import Contacts from "./routes/contact.jsx";
 
 const router = createBrowserRouter([
@@ -26,10 +26,10 @@ const router = createBrowserRouter([
     path: "/blogs",
     element: <Blogs />,
   },
-  {
-    path: "/blogs/:id",
-    element: <BlogDetail />,
-  },
+  // {
+  //   path: "/blogs/:id",
+  //   element: <BlogDetail />,
+  // },
   {
     path: "/contacts",
     element: <Contacts />,

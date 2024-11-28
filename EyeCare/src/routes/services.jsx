@@ -15,8 +15,7 @@ export default function ServicesPage() {
             have got you covered.
           </p>
         </section>
-
-        <section className="service-list">
+        <section className="service-">
           <div className="service-item">
             <h2>Eye Testing</h2>
             <p>
@@ -71,7 +70,6 @@ export default function ServicesPage() {
             </p>
           </div>
         </section>
-
         <section className="faq-section">
           <h2>Frequently Asked Questions</h2>
 

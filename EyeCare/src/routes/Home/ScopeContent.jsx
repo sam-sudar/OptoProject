@@ -9,7 +9,11 @@ export default function ScopeContent() {
       <h1 id="scpContent-h1">Scope of Services Provided</h1>
       <div className="scpContent-box">
         <div>
-          <img className="scpContent-img" src={oldEye} alt="Alt" />
+          <img
+            className="scpContent-img"
+            src={oldEye}
+            alt="Thuckalay, Eye Care Optometrist and Optics"
+          />
           <p>
             Tailored vision care for our senior patients, addressing age-related
             conditions like cataracts and glaucoma, ensuring optimal vision and
@@ -17,7 +21,11 @@ export default function ScopeContent() {
           </p>
         </div>
         <div>
-          <img className="scpContent-img" src={glasses} alt="Alt" />
+          <img
+            className="scpContent-img"
+            src={glasses}
+            alt="Thuckalay, Eye Care Optometrist and Optics"
+          />
           <p>
             Discover our wide range of stylish, high-quality glasses and frames.
             Whether you need prescription lenses or simply want a fashionable
@@ -25,7 +33,11 @@ export default function ScopeContent() {
           </p>
         </div>
         <div>
-          <img className="scpContent-img" src={eyeChart} alt="Alt" />
+          <img
+            className="scpContent-img"
+            src={eyeChart}
+            alt="Thuckalay, Eye Care Optometrist and Optics"
+          />
           <p>
             Regular eye exams to ensure your vision stays sharp and your eyes
             healthy. Our thorough checkups help in early detection of any
@@ -33,7 +45,11 @@ export default function ScopeContent() {
           </p>
         </div>
         <div>
-          <img className="scpContent-img" src={lens} alt="Alt" />
+          <img
+            className="scpContent-img"
+            src={lens}
+            alt="Thuckalay, Eye Care Optometrist and Optics"
+          />
           <p>
             Perfectly fitted contact lenses for clear and comfortable vision,
             including options for those with astigmatism or presbyopia, ensuring

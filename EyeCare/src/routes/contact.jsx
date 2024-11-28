@@ -57,7 +57,7 @@ export default function Contact() {
               style={{ border: 0 }}
               allowfullscreen=""
               loading="lazy"
-              title="Thuckalay, Eye Care Optometrist"
+              title="Thuckalay, Eye Care Optometrist and Optics"
             ></iframe>
           </div>
         </section>

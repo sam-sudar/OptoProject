@@ -10,7 +10,7 @@ export default function About() {
           <div className="image-container">
             <img
               src="/path-to-your-image.jpg"
-              alt="Optometrist in Thuckalay providing geriatric eye care"
+              alt="Optometrist in Thuckalay providing geriatric eye care and Eye Care and Optics"
             />
           </div>
           <div className="header-content">

@@ -5,12 +5,20 @@ export default function FirstContent() {
   return (
     <div className="homeContent-main">
       <div className="homeContent-text">
-        <img className="logo eye-logo" src={EyeLogo} alt="Eye Image" />
+        <img
+          className="logo eye-logo"
+          src={EyeLogo}
+          alt="Thuckalay, Eye Care Optometrist and Optics"
+        />
         <h1>VISIONARY CARE FOR CLEAR TOMORROW</h1>
         <p>With Eye & My Care</p>
       </div>
       <div className="homeContent-image-div">
-        <img className="homeContent-img" src={GlassGirl} />
+        <img
+          className="homeContent-img"
+          src={GlassGirl}
+          alt="Thuckalay, Eye Care Optometrist and Optics"
+        />
       </div>
     </div>
   );
