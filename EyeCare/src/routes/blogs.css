@@ -111,3 +111,35 @@
 .blog-card:hover img {
   transform: scale(1.05);
 }
+
+/* Mobile View: Single Column */
+@media (max-width: 768px) {
+  .blogs-home > h1 {
+    font-size: 2.5rem;
+  }
+  .blogs-home > p {
+    text-align: center;
+  }
+  .blog-cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .blog-card {
+    margin: 0 auto;
+    width: 90%; /* Ensures consistent width for smaller screens */
+  }
+
+  .blog-card img {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+
+  .blog-card h3 {
+    font-size: 1.2em;
+  }
+
+  .blog-card h4 {
+    font-size: 0.85rem;
+  }
+}
