@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <Navbar />
       <div className="services-container">
         <section className="services-header">
-          <h1>Our Services</h1>
+          <h1>OUR SERVICES</h1>
           <p>
             At Eye & My Care Optics, we offer a range of professional services
             aimed at providing the best care for your vision and eye health.
@@ -15,7 +15,7 @@ export default function ServicesPage() {
             have got you covered.
           </p>
         </section>
-        <section className="service-">
+        <section className="service-list">
           <div className="service-item">
             <h2>Eye Testing</h2>
             <p>

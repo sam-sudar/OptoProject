@@ -11,7 +11,13 @@ import Contacts from "./routes/contact.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-AOS.init({ duration: 1000, once: true });
+AOS.init({
+  once: true,
+  duration: 1200, // Global duration for all animations
+  easing: "ease-in-out-back", // Smooth easing effect
+  offset: 200, // Trigger animation earlier/later (adjust based on needs)
+  delay: 100,
+});
 
 const router = createBrowserRouter([
   {

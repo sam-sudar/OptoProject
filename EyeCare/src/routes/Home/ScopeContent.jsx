@@ -8,7 +8,7 @@ export default function ScopeContent() {
     <div className="scpContent-main">
       <h1 id="scpContent-h1">Scope of Services Provided</h1>
       <div className="scpContent-box">
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
           <img
             className="scpContent-img"
             src={oldEye}
@@ -20,7 +20,7 @@ export default function ScopeContent() {
             comfort in later years.
           </p>
         </div>
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
           <img
             className="scpContent-img"
             src={glasses}
@@ -32,7 +32,7 @@ export default function ScopeContent() {
             accessory, we got you covered.
           </p>
         </div>
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
           <img
             className="scpContent-img"
             src={eyeChart}
@@ -44,7 +44,7 @@ export default function ScopeContent() {
             potential issues, safeguarding your sight.
           </p>
         </div>
-        <div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
           <img
             className="scpContent-img"
             src={lens}

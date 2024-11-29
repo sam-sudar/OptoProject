@@ -1,4 +1,5 @@
 import "./footer.css"; // Import the CSS file for styling
+import { FaInstagram, FaFacebookF } from "react-icons/fa"; // Import social icons
 
 const Footer = () => {
   const schemaData = {
@@ -79,15 +80,16 @@ const Footer = () => {
             </a>
           </p>
 
+          {/* Social Icons */}
           <div className="social-icons">
             <a
-              href="https://instagram.com/eye_n_my_care"
+              href="https://www.instagram.com/eye_n_my_care"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
               title="Follow us on Instagram"
             >
-              Instagram
+              <FaInstagram size={24} color="#E1306C" />
             </a>
             <a
               href="https://www.facebook.com/eyeandmycare"
@@ -96,7 +98,7 @@ const Footer = () => {
               className="social-icon"
               title="Follow us on Facebook"
             >
-              Facebook
+              <FaFacebookF size={24} color="#4267B2" />
             </a>
           </div>
         </section>

@@ -14,13 +14,13 @@
 }
 
 .services-header h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #2b4c7e;
 }
 
 .services-header p {
   font-size: 1.2rem;
-  color: #3f3944;
+  color: #1c1c1c;
   max-width: 600px;
   margin: 10px auto;
 }
@@ -35,6 +35,8 @@
 
 .service-item {
   background-color: #e6c9b6;
+
+  background: linear-gradient(to bottom right, #009193, #2e3b4e, #404040);
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.3s ease;
@@ -43,13 +45,13 @@
 
 .service-item h2 {
   font-size: 1.8rem;
-  color: #1c1c1c;
+  color: #f6f2ed;
   margin-bottom: 10px;
 }
 
 .service-item p {
   font-size: 1rem;
-  color: #333;
+  color: #fff;
 }
 
 .service-item:hover {

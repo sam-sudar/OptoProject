@@ -2,7 +2,7 @@
 .footer {
   background: #333333; /* Black to Blue gradient */
   color: white;
-  padding: 40px 20px;
+  padding: 40px;
   font-family: "Kanit", sans-serif;
 }
 
@@ -23,7 +23,7 @@
 
 .footer-logo a {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -70,15 +70,25 @@
   margin: 10px 0;
 }
 
+.footer-right p a {
+  color: #009193;
+}
+
+.footer-right p a:hover {
+  color: #fff;
+}
+
 .social-icons {
   display: flex;
   gap: 15px;
 }
 
 .social-icons a {
+  width: 45px;
+  height: 45px;
   color: white;
-  background-color: #ff0099; /* Pink background */
-  border-radius: 50%;
+  background-color: #e6c9b6; /* Pink background */
+  border-radius: 50px;
   padding: 10px;
   font-size: 1.4rem;
   text-decoration: none;
@@ -94,11 +104,16 @@
   text-align: center;
   margin-top: 30px;
   font-size: 0.9rem;
-  color: #f3f3f3;
+  color: #fff;
+  background: linear-gradient(to bottom right, #009193, #2e3b4e, #404040);
+}
+
+.footer-bottom > p {
+  color: #fff;
 }
 
 .footer-bottom a {
-  color: #ff0099;
+  color: #009193;
   text-decoration: none;
 }
 
