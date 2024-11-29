@@ -13,7 +13,7 @@
 .contact-header {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #5cb6b8, #abc6d7);
+  background: linear-gradient(to bottom, #7fffd4, #009193);
   color: #3f3944;
   width: 78%;
 }
@@ -74,7 +74,8 @@
 .geriatric-care {
   padding: 40px 20px;
   background-color: #9d9ea9;
-  color: #fff;
+  background: linear-gradient(to bottom, #7fffd4, #009193);
+  color: #3f3944;
   width: 100%;
   max-width: 1200px;
   border-radius: 8px;
@@ -91,6 +92,8 @@
 .geriatric-care p {
   font-size: 1.1rem;
   line-height: 1.6;
+
+  color: #fff;
 }
 
 @media (max-width: 768px) {

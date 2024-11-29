@@ -8,29 +8,24 @@ export default function Navbar() {
   };
 
   return (
-    <div className="home-nav">
-      <div id="nav-left"></div>
-      <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div className="navbar">
+      <div className="logo">
+        {/* Add logo or branding here */}
+        <h1>Eye & My Care</h1>
       </div>
-      <div id="nav-right" className={isOpen ? "open" : ""}>
-        <a href={"/"} onClick={toggleMenu}>
-          Home
-        </a>
-        <a href={"/about"} onClick={toggleMenu}>
-          About me
-        </a>
-        <a href={"/services"} onClick={toggleMenu}>
-          Services
-        </a>
-        <a href={"/blogs"} onClick={toggleMenu}>
-          Blogs
-        </a>
-        <div id="contact-div">
-          <a href={"/contacts"} onClick={toggleMenu}>
-            <strong>Contacts</strong>
+      <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/services">Services</a>
+        <a href="/blogs">Blogs</a>
+        <div className="contact-btn">
+          <a href="/contacts">
+            <strong>Contact</strong>
           </a>
         </div>
       </div>

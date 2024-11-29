@@ -13,7 +13,12 @@
 
 .blogs-home > h1 {
   width: 100%;
-  color: #333;
+  /* color: #333; */
+  background: -webkit-linear-gradient(#2b4c7e, #1c1c1c);
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  color: transparent;
   text-align: center;
   font-family: "Kanit";
   font-size: 4rem;

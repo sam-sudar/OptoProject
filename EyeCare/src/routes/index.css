@@ -65,6 +65,7 @@ a {
   cursor: pointer;
 } */
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -74,133 +75,149 @@ a {
 html,
 body {
   height: 100%;
-  width: 100%;
   font-family: "Poppins", serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   background-color: #e6c9b6;
   color: #1c1c1c;
 }
 
-main {
-  width: 100vw;
-  height: 100vw;
-}
-
-.home-nav {
+/* Navbar Styles */
+.navbar {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
   background-color: #e6c9b6;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure the navbar stays on top of other content */
 }
 
-#nav-left {
-  display: flex;
-  align-items: center;
+.navbar .logo h1 {
+  font-size: 1.8rem;
+  color: #333;
 }
 
-#nav-right {
-  width: 50%;
+/* Navbar Links */
+.nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Poppins";
-  font-size: 1.4rem;
-  font-weight: 450;
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-a {
+.nav-links a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-#contact-div {
-  width: 120px;
-  height: 50px;
-  padding-top: 10px;
-  text-align: center;
-  background: linear-gradient(#7fffd4, #009193);
+.nav-links a:hover {
+  color: #009193;
 }
 
-#contact-div:hover {
-  background: linear-gradient(#009193, #7fffd4);
-  opacity: 0.9;
-  transition: background 1s ease-out;
+.contact-btn {
+  background: linear-gradient(to right, #7fffd4, #009193);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(to right, #009193, #7fffd4);
   cursor: pointer;
 }
 
-/* Responsive Navbar */
+/* Hamburger Icon */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  position: absolute;
+  top: 20px; /* Position 20px from the top */
+  left: 20px; /* Position 20px from the left */
+  z-index: 10000; /* Ensure it's clickable and above other elements */
 }
 
-.hamburger div {
+.hamburger .bar {
   width: 30px;
   height: 3px;
-  background-color: #333333;
-  margin: 5px;
+  background-color: #333;
+  margin: 5px 0;
   transition: 0.4s;
 }
 
-/* Hide navbar links on smaller screens */
-#nav-right {
-  display: flex;
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: top left;
 }
 
-#nav-right a {
-  display: block;
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
 }
 
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+/* Responsive Navbar */
 @media (max-width: 768px) {
-  .home-nav {
-    height: 60px;
-    padding: 0 20px;
+  .navbar {
+    padding: 0 15px;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
-  #nav-right {
+  .nav-links {
     position: absolute;
-    top: 60px;
+    top: 80px;
+    left: 0;
     right: 0;
     background-color: #e6c9b6;
     width: 100%;
     height: 0;
     overflow: hidden;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     transition: height 0.3s ease;
+    z-index: 9998; /* Make sure the dropdown doesn't hide behind other content */
   }
 
-  #nav-right.open {
-    height: calc(100vh - 60px);
+  .nav-links.open {
+    height: 100vh;
   }
 
-  #nav-right a {
-    margin: 20px 0;
-    font-size: 1.2rem;
+  .nav-links a {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    transition: color 0.3s ease;
   }
 
-  #nav-right a:last-child {
-    margin: 0px;
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
-  #nav-left {
-    display: none;
+  .navbar .logo h1 {
+    font-size: 1.5rem;
   }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Fix content overlapping or navbar hiding behind other elements */
+body {
+  padding-top: 80px; /* Adjust for fixed navbar */
 }
 
 /* About  */

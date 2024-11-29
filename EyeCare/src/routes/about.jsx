@@ -1,108 +1,88 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./about.css";
 import Navbar from "./Home/navbar";
+import AboutImg from "../assets/about1.jpg";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
     <>
       <Navbar />
-      <main className="about-container">
-        <section className="about-header">
-          <div className="image-container">
-            <img
-              src="/path-to-your-image.jpg"
-              alt="Optometrist in Thuckalay providing geriatric eye care and Eye Care and Optics"
-            />
-          </div>
-          <div className="header-content">
-            <h1>About Eye & My Care</h1>
+      <main className="about-page">
+        {/* Hero Section */}
+        <section className="hero-section" data-aos="fade-up">
+          <h1>Welcome to Eye & My Care</h1>
+          <p>
+            Exceptional optometry services in Thuckalay, Tamil Nadu.
+            Specializing in geriatric eye care, vision solutions, and
+            personalized treatments for all ages.
+          </p>
+          <a href="#about-us" className="cta-button">
+            Explore Our Services
+          </a>
+        </section>
+
+        {/* About Us Section */}
+        <section id="about-us" className="info-section" data-aos="fade-up">
+          <h2>About Eye & My Care Optics</h2>
+          <p>
+            At Eye & My Care, we offer comprehensive optometry services designed
+            to meet the needs of individuals at every stage of life. Our clinic,
+            located in Thuckalay, focuses on personalized care, with a special
+            emphasis on geriatric eye care.
+          </p>
+          <p>
+            Whether you are visiting for a routine eye exam, seeking treatment
+            for a specific condition, or in need of high-quality eyewear, our
+            dedicated team is here to help. We believe in providing affordable,
+            accessible, and expert care for our patients in a friendly and
+            welcoming environment.
+          </p>
+          <img
+            src={AboutImg}
+            alt="Eye & My Care Optics Store"
+            className="store-image"
+          />
+        </section>
+
+        {/* Doctor Details Section */}
+        <section className="doctor-details" data-aos="fade-left">
+          <h2>Meet Dr. Abisha, Our Expert Optometrist</h2>
+          <div className="doctor-content">
             <p>
-              Welcome to Eye & My Care Optics, located conveniently next to the
-              post office in Thuckalay, Tamil Nadu. We are dedicated to offering
-              high-quality optometry services, specializing in comprehensive eye
-              exams, geriatric eye care, and personalized vision care solutions
-              for all ages.
+              Dr. Abisha is an experienced and compassionate optometrist
+              specializing in geriatric eye care. With her personalized
+              approach, Dr. Abisha ensures every patient receives the best care
+              tailored to their individual needs.
             </p>
             <p>
-              Our clinic prides itself on delivering patient-centered care in a
-              welcoming and accessible environment. Whether you need a routine
-              eye checkup, treatment for age-related vision problems, or
-              custom-fit eyewear, Eye & My Care is here to help.
+              She has extensive expertise in diagnosing and managing age-related
+              eye conditions, such as cataracts, glaucoma, macular degeneration,
+              and more. Dr. Abisha is dedicated to improving the quality of life
+              of her patients through exceptional care.
             </p>
           </div>
         </section>
 
-        <section className="doctor-details">
-          <h2>Meet Dr. Abisha - Your Optometrist in Thuckalay</h2>
-          <p>
-            Dr. Abisha is a highly qualified optometrist with extensive
-            experience in diagnosing and treating eye conditions, particularly
-            in older adults. With a deep commitment to improving eye health, she
-            offers a personalized approach to each patient, ensuring that you
-            receive the care and attention your eyes deserve.
-          </p>
-          <p>
-            Her specialization in geriatric eye care means she understands the
-            unique challenges older adults face when it comes to their vision.
-            Whether it is cataracts, glaucoma, or age-related macular
-            degeneration, Dr. Abisha is skilled at providing the best treatment
-            for maintaining and improving eye health.
-          </p>
-        </section>
-
-        <section className="clinic-info">
+        {/* Clinic Information Section */}
+        <section className="clinic-info" data-aos="fade-right">
           <h2>Our Eye Clinic in Thuckalay</h2>
           <p>
-            Eye & My Care Optics is located next to the post office in
-            Thuckalay. We serve patients from Thuckalay, Saralvillai, and nearby
-            regions, offering affordable and accessible eye care services. Our
-            goal is to ensure everyone has access to expert eye care, from basic
-            checkups to advanced treatment options.
+            Eye & My Care Optics is conveniently located next to the post office
+            in Thuckalay, Tamil Nadu. We provide a full range of eye care
+            services, including comprehensive eye exams, specialized geriatric
+            care, and high-quality eyewear solutions.
           </p>
-          <p>
-            <strong>Address:</strong>
-            <br />
-            Eye & My Care Optics
-            <br />
-            Next to Post Office
-            <br />
-            Thuckalay, Tamil Nadu
-            <br />
-            Pin: 629175
-            <br />
-            <strong>Phone:</strong> 9384133714
-          </p>
-          <p>
-            We understand the importance of convenience, which is why we offer
-            flexible appointment scheduling to fit your busy life. If you are
-            experiencing vision issues, need a new prescription, or simply want
-            to maintain your eye health, contact us today to book your
-            appointment.
-          </p>
-        </section>
-
-        <section className="services">
-          <h2>Why Choose Eye & My Care Optics?</h2>
-          <ul>
-            <li>
-              <strong>Personalized Eye Care</strong> - Every patient receives
-              individualized attention, ensuring the best possible care based on
-              your specific eye health needs.
-            </li>
-            <li>
-              <strong>Geriatric Eye Care Expertise</strong> - We specialize in
-              managing eye conditions associated with aging, offering tailored
-              treatments for older adults.
-            </li>
-            <li>
-              <strong>Convenient Location</strong> - Our clinic is easily
-              accessible, located right next to the post office in Thuckalay.
-            </li>
-            <li>
-              <strong>Affordable Pricing</strong> - We offer competitive pricing
-              on all our services, from routine checkups to eyeglasses and
-              treatments.
-            </li>
-          </ul>
+          <address>
+            <strong>Address:</strong> Eye & My Care Optics, Next to Post Office,
+            Thuckalay, Tamil Nadu, 629175 <br />
+            <strong>Phone:</strong> <a href="tel:+919384133714">9384133714</a>
+          </address>
         </section>
       </main>
     </>
