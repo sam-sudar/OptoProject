@@ -4,6 +4,7 @@ import "./home.css";
 import DoctorContent from "./DoctorContent";
 import ScopeContent from "./ScopeContent";
 import ListContent from "./ListContent";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <DoctorContent />
       <ScopeContent />
       <ListContent />
+      <Footer />
     </main>
   );
 }

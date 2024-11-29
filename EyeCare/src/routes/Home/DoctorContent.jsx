@@ -4,13 +4,17 @@ import AbiImg from "../../assets/abi_pic1.jpg";
 export default function DoctorContent() {
   return (
     <div className="docContent-main">
-      <div className="docContent-image">
+      <div className="docContent-image" id="trigger">
         <img
           src={AbiImg}
           alt="Dr. Abisha S, Optometrist in Thuckalay providing Geriatric eye care"
         />
       </div>
-      <div className="docContent-text">
+      <div
+        className="docContent-text"
+        data-aos="fade-in"
+        data-aos-anchor="#trigger"
+      >
         <img
           className="logo"
           src={DocLogo}
@@ -28,17 +32,17 @@ export default function DoctorContent() {
           vision.
         </p>
         <div className="exp-div">
-          <div className="exp-box">
+          <div className="exp-box" data-aos="fade-up" data-aos-delay="0">
             <span style={{ fontWeight: "bold" }}>Exceptional Expertise: </span>
             Offers advanced care in managing age-related ocular conditions and
             enhancing overall eye health.
           </div>
-          <div className="exp-box">
+          <div className="exp-box" data-aos="fade-up" data-aos-delay="200">
             <span style={{ fontWeight: "bold" }}>Patient-Centric Care: </span>
             Provides customized treatment plans to meet unique vision care
             needs, ensuring optimal patient comfort and satisfaction.
           </div>
-          <div className="exp-box">
+          <div className="exp-box" data-aos="fade-up" data-aos-delay="400">
             <span style={{ fontWeight: "bold" }}>Proven Track Record: </span>
             Recipient of prestigious awards from the Vision Science Academy and
             author of multiple published works in optometry.

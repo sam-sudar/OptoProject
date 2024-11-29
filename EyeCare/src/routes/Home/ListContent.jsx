@@ -2,7 +2,7 @@ import heartLogo from "../../assets/heart_logo1.png";
 
 export default function ListContent() {
   return (
-    <div className="listContent-main">
+    <div className="listContent-main" data-aos="zoom-in" data-aos-once="false">
       <img src={heartLogo} />
       <div className="listContent-div">
         <div className="listDiv-left">1</div>

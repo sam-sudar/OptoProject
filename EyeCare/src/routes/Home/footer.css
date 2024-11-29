@@ -1,0 +1,143 @@
+/* Black and Blue Gradient Background */
+.footer {
+  background: #333333; /* Black to Blue gradient */
+  color: white;
+  padding: 40px 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-logo a:hover {
+  color: #ff0099; /* Soft pink hover effect */
+}
+
+.footer-description {
+  color: #dcdcdc;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+  color: #f3f3f3;
+  font-size: 1.2rem;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+  color: #ff0099;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-middle ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-right p {
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  background-color: #ff0099; /* Pink background */
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: #ff0099;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #f3f3f3;
+}
+
+.footer-bottom a {
+  color: #ff0099;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo a {
+    font-size: 1.5rem;
+  }
+
+  .footer-middle h3,
+  .footer-right h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-description {
+    font-size: 1rem;
+  }
+
+  .footer-middle ul li a {
+    font-size: 0.95rem;
+  }
+
+  .footer-right p {
+    font-size: 1.1rem;
+  }
+}

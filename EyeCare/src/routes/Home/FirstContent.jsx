@@ -3,7 +3,11 @@ import GlassGirl from "../../assets/girl_slitlamp.jpeg";
 
 export default function FirstContent() {
   return (
-    <div className="homeContent-main">
+    <div
+      className="homeContent-main"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out-cubic"
+    >
       <div className="homeContent-text">
         <img
           className="logo eye-logo"

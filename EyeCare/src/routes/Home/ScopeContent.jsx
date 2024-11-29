@@ -57,8 +57,12 @@ export default function ScopeContent() {
           </p>
         </div>
       </div>
-      <div className="gerContent-div">
-        <div>
+      <div
+        className="gerContent-div"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div style={{ transition: "transform 0.3s" }}>
           <p>
             {" "}
             <span

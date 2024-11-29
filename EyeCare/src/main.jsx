@@ -8,6 +8,10 @@ import Services from "./routes/services.jsx";
 import Blogs from "./routes/blogs.jsx";
 // import BlogDetail from "./routes/blogsDetail.jsx";
 import Contacts from "./routes/contact.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({ duration: 1000, once: true });
 
 const router = createBrowserRouter([
   {

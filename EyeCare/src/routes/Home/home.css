@@ -36,6 +36,11 @@
   font-style: oblique;
   font-family: "Kanit";
   color: #1c1c1c;
+  background: -webkit-linear-gradient(#2b4c7e, #1c1c1c);
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  color: transparent;
 }
 
 .icon {
@@ -150,7 +155,8 @@
   width: 100%;
   height: 28%;
   padding: 10px;
-  background-color: #abc6d7;
+  /* background-color: #abc6d7; */
+  background: linear-gradient(to bottom right, #abc6d7, #72a5c2);
   border-radius: 10px;
 }
 /* Media Query */
@@ -216,7 +222,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #009193;
+  /* background-color: #009193; */
+  background: linear-gradient(to bottom right, #009193, #2e3b4e, #404040);
   border-radius: 10px;
   margin-bottom: 30px;
 }
@@ -225,6 +232,7 @@
   width: 21%;
   height: 90%;
   background-color: #f6f2ed;
+  background: linear-gradient(to bottom right, #f6f2ed, #a3e4d7);
   padding: 15px;
   word-wrap: break-word;
   display: flex;
@@ -273,6 +281,13 @@
   cursor: pointer;
   font-family: "Poppins", serif;
   font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.gerContent-div > div > button:hover {
+  transform: scale(1.2);
+  background: linear-gradient(to bottom right, #009193, #404040);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -320,6 +335,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 0px;
+  margin-bottom: 60px;
 }
 
 .listContent-main > img {
