@@ -16,7 +16,13 @@ export default function ServicesPage() {
           </p>
         </section>
         <section className="service-list">
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Eye Testing</h2>
             <p>
               We provide thorough eye examinations to ensure that your vision is
@@ -25,7 +31,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Specs & Frames</h2>
             <p>
               We offer a variety of stylish spectacles and frames for all ages.
@@ -34,7 +46,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Sunglasses</h2>
             <p>
               Protect your eyes from harmful UV rays with our collection of
@@ -43,7 +61,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Glass Repair</h2>
             <p>
               Quick and affordable glass repair services are available to keep
@@ -52,7 +76,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Contact Lens</h2>
             <p>
               Whether you are new to contact lenses or need a replacement, we
@@ -61,7 +91,13 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="service-item">
+          <div
+            className="service-item"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+            data-aos-easing="ease-in-out"
+            data-aos-anchor-placement="top-bottom"
+          >
             <h2>Geriatric Eye Care</h2>
             <p>
               Specialized care for seniors to address age-related vision
@@ -70,7 +106,12 @@ export default function ServicesPage() {
             </p>
           </div>
         </section>
-        <section className="faq-section">
+        <section
+          className="faq-section"
+          data-aos="zoom-out"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+        >
           <h2>Frequently Asked Questions</h2>
 
           <div className="faq-item">
@@ -109,7 +150,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="faq-item">
-            <h3>What is geriatric eye care?</h3>
+            <h3>What is geriatric eye care? 🌠</h3>
             <p>
               Geriatric eye care focuses on treating vision problems in older
               adults, including age-related conditions such as cataracts,

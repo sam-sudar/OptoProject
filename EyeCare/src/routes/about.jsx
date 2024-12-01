@@ -1,15 +1,8 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "./about.css";
 import Navbar from "./Home/navbar";
 import AboutImg from "../assets/about1.jpg";
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
-  }, []);
-
   return (
     <>
       <Navbar />
@@ -45,7 +38,7 @@ export default function About() {
           </p>
           <img
             src={AboutImg}
-            alt="Eye & My Care Optics Store"
+            alt="Eye & My Care Optics and Opticals Store in Thuckalay"
             className="store-image"
           />
         </section>

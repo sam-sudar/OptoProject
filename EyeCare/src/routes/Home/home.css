@@ -2,7 +2,7 @@
 /* FirstContent */
 .homeContent-main {
   width: 100%;
-  height: 650px;
+  height: 680px;
   display: flex;
 }
 
@@ -58,6 +58,58 @@
   border-radius: 4px;
   height: 75%;
   margin-left: 5%;
+}
+
+/* Text Effect */
+/* Dark Red to Orange Gradient for "Eye &" */
+.highlight-red-orange {
+  font-weight: bold;
+  background: linear-gradient(90deg, #8b0000, #a94e7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse-red-orange 10s infinite alternate ease-in-out;
+}
+
+/* Dark Black to Blue Gradient for "My Care" */
+.highlight-black-blue {
+  font-weight: bold;
+  background: linear-gradient(135deg, #000000, #004b87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse-black-blue 10s infinite alternate ease-in-out;
+}
+
+/* Smooth pulsing animation for red-orange gradient */
+@keyframes pulse-red-orange {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+/* Smooth pulsing animation for black-blue gradient */
+@keyframes pulse-black-blue {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* Ensures gradient fills dynamically */
+.highlight-red-orange,
+.highlight-black-blue {
+  background-size: 400%;
+  display: inline-block;
 }
 
 /* Media Query */

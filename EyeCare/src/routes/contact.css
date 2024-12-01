@@ -46,8 +46,9 @@
 }
 
 .contact-details h2 {
-  color: #856a6f;
-  margin-bottom: 10px;
+  color: #333333;
+  margin-bottom: 7px;
+  margin-top: 20px;
 }
 
 .contact-details p,

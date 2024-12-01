@@ -48,17 +48,17 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#about" title="Learn about Eye & My Care">
+              <a href="/about" title="Learn about Eye & My Care">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" title="Our optometry services in Thuckalay">
+              <a href="/services" title="Our optometry services in Thuckalay">
                 Our Services
               </a>
             </li>
             <li>
-              <a href="#contact" title="Get in touch with us">
+              <a href="/contacts" title="Get in touch with us">
                 Contact
               </a>
             </li>

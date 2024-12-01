@@ -89,15 +89,25 @@ body {
   align-items: center;
   padding: 0 20px;
   background-color: #e6c9b6;
-  position: fixed; /* Fix the navbar at the top */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999; /* Ensure the navbar stays on top of other content */
+  z-index: 9999;
 }
 
-.navbar .logo h1 {
-  font-size: 1.8rem;
-  color: #333;
+.nav_logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 150px; /* Limit max width for larger screens */
+}
+
+#main_logo {
+  width: 90%;
+  height: 55px;
+  max-height: 70px; /* Ensure logo maintains aspect ratio */
+  object-fit: contain;
+  margin-left: 20px;
 }
 
 /* Navbar Links */
@@ -132,15 +142,19 @@ body {
   cursor: pointer;
 }
 
+.contact-btn > a:hover {
+  color: #fff;
+}
+
 /* Hamburger Icon */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   position: absolute;
-  top: 20px; /* Position 20px from the top */
-  left: 20px; /* Position 20px from the left */
-  z-index: 10000; /* Ensure it's clickable and above other elements */
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
 }
 
 .hamburger .bar {
@@ -166,9 +180,18 @@ body {
 }
 
 /* Responsive Navbar */
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .navbar {
     padding: 0 15px;
+    width: 100vw; /* Ensures full width on mobile */
+    max-width: 100%; /* Prevents shrinking */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+
+  #main_logo {
+    width: 70%; /* Reduce the width slightly */
+    height: 90%; /* Maintain aspect ratio */
   }
 
   .nav-links {
@@ -184,7 +207,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: height 0.3s ease;
-    z-index: 9998; /* Make sure the dropdown doesn't hide behind other content */
+    z-index: 9998;
   }
 
   .nav-links.open {
@@ -194,7 +217,6 @@ body {
   .nav-links a {
     font-size: 1.5rem;
     margin: 15px 0;
-    transition: color 0.3s ease;
   }
 
   .hamburger {
@@ -203,13 +225,19 @@ body {
     top: 20px;
     right: 20px;
   }
-
-  .navbar .logo h1 {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    width: 100vw; /* Ensures consistency in mobile width */
+    padding: 0 10px; /* Slight padding adjustment for smaller screens */
+  }
+
+  #main_logo {
+    width: 70%; /* Further reduce the width for smaller screens */
+    height: 90%; /* Maintain aspect ratio */
+  }
+
   .nav-links a {
     font-size: 1.3rem;
   }

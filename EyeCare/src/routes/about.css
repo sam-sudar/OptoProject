@@ -2,7 +2,7 @@
 .about-page {
   font-family: "Poppins", sans-serif;
   color: #1c1c1c;
-  padding: 0 1rem; /* Add some padding on smaller screens */
+  padding: 0 1rem 3rem; /* Add some padding on smaller screens */
 }
 
 /* Hero Section */
@@ -44,6 +44,7 @@
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   border: none;
+  text-decoration: none;
 }
 
 .cta-button:hover {

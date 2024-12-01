@@ -1,4 +1,5 @@
 import { useState } from "react";
+import mainLogo from "../../assets/Eye&MyCare.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,13 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="logo">
+      <div className="nav_logo">
         {/* Add logo or branding here */}
-        <h1>Eye & My Care</h1>
+        <img
+          id="main_logo"
+          src={mainLogo}
+          alt="Eye & My Care Optics and Opticals Store in Thuckalay"
+        />
       </div>
       <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
