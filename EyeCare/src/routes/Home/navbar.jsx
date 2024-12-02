@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <a href="/">Home</a>
-        <a href="/about">About Me</a>
+        <a href="/about">About Us</a>
         <a href="/services">Services</a>
         <a href="/blogs">Blogs</a>
         <div className="contact-btn">
