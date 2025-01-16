@@ -22,14 +22,14 @@ export default function DoctorContent() {
         />
         <h2>Abisha Soman, Your Trusted Optometrist</h2>
         <p>
-          Dr. Abisha brings over seven years of specialized experience to Eye &
-          My Care, with a deep commitment to providing exceptional geriatric eye
-          care. Trained at renowned institutions and equipped with a fellowship
-          in Clinical Optometry from Aravind Eye Hospital, Chennai, she excels
-          in comprehensive eye examinations and personalized patient care. Dr.
-          Abisha uses an approach that combines state-of-the-art diagnostics
-          with a passion for enhancing the quality of life through improved
-          vision.
+          Our Eye Specialist, Abisha brings over seven years of specialized
+          experience to Eye & My Care, with a deep commitment to providing
+          exceptional geriatric eye care. Trained at renowned institutions and
+          equipped with a fellowship in Clinical Optometry from Aravind Eye
+          Hospital, Chennai, she excels in comprehensive eye examinations and
+          personalized patient care. Abisha also uses an approach that combines
+          state-of-the-art diagnostics with a passion for enhancing the quality
+          of life through improved vision.
         </p>
         <div className="exp-div">
           <div className="exp-box" data-aos="fade-up" data-aos-delay="0">

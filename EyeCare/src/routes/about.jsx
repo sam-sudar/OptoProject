@@ -45,19 +45,19 @@ export default function About() {
 
         {/* Doctor Details Section */}
         <section className="doctor-details" data-aos="fade-left">
-          <h2>Meet Dr. Abisha, Our Expert Optometrist</h2>
+          <h2>Abisha Soman, Our Expert Optometrist</h2>
           <div className="doctor-content">
             <p>
-              Dr. Abisha is an experienced and compassionate optometrist
+              Abisha is an experienced and compassionate optometrist
               specializing in geriatric eye care. With her personalized
-              approach, Dr. Abisha ensures every patient receives the best care
-              tailored to their individual needs.
+              approach, Expert Abisha ensures every patient receives the best
+              care tailored to their individual needs.
             </p>
             <p>
               She has extensive expertise in diagnosing and managing age-related
               eye conditions, such as cataracts, glaucoma, macular degeneration,
-              and more. Dr. Abisha is dedicated to improving the quality of life
-              of her patients through exceptional care.
+              and more. Abisha is a Speacialist dedicated to improving the
+              quality of life of her patients through exceptional care.
             </p>
           </div>
         </section>
