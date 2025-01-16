@@ -7,7 +7,7 @@ export default function DoctorContent() {
       <div className="docContent-image" id="trigger">
         <img
           src={AbiImg}
-          alt="Dr. Abisha S, Optometrist in Thuckalay providing Geriatric eye care"
+          alt="Abisha Soman, Clinical Optometrist in Thuckalay providing Geriatric eye care"
         />
       </div>
       <div
