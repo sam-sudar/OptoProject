@@ -20,7 +20,7 @@ export default function DoctorContent() {
           src={DocLogo}
           alt="Thuckalay, Eye Care Optometrist and Optics"
         />
-        <h2>Dr. Abisha S, Your Trusted Optometrist</h2>
+        <h2>Abisha Soman, Your Trusted Optometrist</h2>
         <p>
           Dr. Abisha brings over seven years of specialized experience to Eye &
           My Care, with a deep commitment to providing exceptional geriatric eye
