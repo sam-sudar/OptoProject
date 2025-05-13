@@ -90,7 +90,7 @@
   margin: 0;
   height: 80px;
   padding: 10px 16px 3px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   /* text-align: center; */
   color: #444;
   color: #2e3b4e;
@@ -141,7 +141,7 @@
   }
 
   .blog-card h3 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .blog-card h4 {

@@ -22,7 +22,7 @@ export const blogData = [
     id: 3,
     author: "Abisha S",
     link: "https://visionscienceacademy.org/dont-lose-the-permanent-treasure-for-the-temporary-pleasure/",
-    title: "Value the Permanent Over the Temporary",
+    title: "Dont lose the permanent treasure for the temporary pleasure",
     image: "/assets/Blog_EyeCare1.jpg",
     content:
       "Being an optometrist involves more than just giving a prescription and dispensing eyeglasses. This marks the beginning of a crucial process for both the dispenser and the customer. In this article, we will explore the significance of working in an optical store and how this experience contributes to an optometrist's career.",
