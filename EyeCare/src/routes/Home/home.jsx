@@ -5,6 +5,8 @@ import DoctorContent from "./DoctorContent";
 import ScopeContent from "./ScopeContent";
 import ListContent from "./ListContent";
 import Footer from "./Footer";
+import Testimonials from "./Testimonials";
+
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Navbar />
       <FirstContent />
       <DoctorContent />
+      <Testimonials />
       <ScopeContent />
       <ListContent />
       <Footer />

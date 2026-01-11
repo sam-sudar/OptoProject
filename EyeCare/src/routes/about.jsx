@@ -1,6 +1,9 @@
 import "./about.css";
 import Navbar from "./Home/navbar";
 import AboutImg from "../assets/about1.jpg";
+import AboutGallery1 from "../assets/About_Gallery1.jpg"
+import AboutGallery2 from "../assets/About_Gallery2.jpg"
+import AboutGallery3 from "../assets/About_Gallery3.jpg"
 
 export default function About() {
   return (
@@ -42,6 +45,44 @@ export default function About() {
             className="store-image"
           />
         </section>
+        {/* Why Choose Us Section */}
+        <section className="why-us" data-aos="fade-up">
+          <h2>Why Choose Eye & My Care?</h2>
+
+          <div className="why-us-grid">
+            <div className="why-card">
+              <h3>Personalized Eye Care</h3>
+              <p>
+                Every patient receives individual attention, detailed eye evaluation,
+                and treatment plans tailored specifically to their needs.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <h3>Geriatric Eye Care Expertise</h3>
+              <p>
+                Specialized care for age-related eye conditions including cataracts,
+                glaucoma, and vision degeneration with a compassionate approach.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <h3>Modern Equipment</h3>
+              <p>
+                Advanced diagnostic tools ensure accurate eye examinations and early
+                detection of vision issues.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <h3>Affordable & Accessible</h3>
+              <p>
+                High-quality eye care and eyewear solutions at affordable pricing for
+                families in and around Thuckalay.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Doctor Details Section */}
         <section className="doctor-details" data-aos="fade-left">
@@ -59,6 +100,16 @@ export default function About() {
               and more. Abisha is a Speacialist dedicated to improving the
               quality of life of her patients through exceptional care.
             </p>
+          </div>
+        </section>
+        {/* Clinic Gallery Section */}
+        <section className="gallery-section" data-aos="fade-up">
+          <h2>Inside Our Clinic</h2>
+
+          <div className="gallery-grid">
+            <img src={AboutGallery1} alt="Eye clinic interior" />
+            <img src={AboutGallery2} alt="Optical frames display" />
+            <img src={AboutGallery3} alt="Eye examination room" />
           </div>
         </section>
 
