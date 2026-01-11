@@ -214,12 +214,7 @@
     padding: 2rem 3%; /* More padding for mobile */
   }
 
-  .store-image {
-    max-width: 100%;
-  }
-  .why-us, .clinic-info{
-    margin-top: 10px
-  }
+  
 }
 
 /* Why Choose Us Section */
@@ -299,3 +294,9 @@
   transform: scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
+.store-image {
+    max-width: 100%;
+  }
+  .why-us, .clinic-info{
+    margin-top: 10px
+  }
